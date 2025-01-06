@@ -13,9 +13,11 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: url('background.gif') center center / cover no-repeat;
+            overflow: hidden;
             color: white;
             text-align: center;
+            background: url('background.gif') center center / auto 110% fixed no-repeat;
+            background-size: cover;
         }
         h1, p, a {
             font-size: 1.5em;
@@ -35,15 +37,33 @@
         a:hover {
             color: #1ed760;
         }
+        .video-wrapper {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        iframe {
+            border: none;
+            height: 315px;
+            width: 560px;
+        }
     </style>
 </head>
 <body>
-    <h1>DJ Ikamon</h1>
-    <p>Ready to bring the best beats to your event!</p>
-    <p>For bookings and inquiries:</p>
-    <p>
-        📧 <a href="mailto:ikamondj@gmail.com">ikamondj@gmail.com</a><br>
-        📞 <a href="tel:+16789066889">678-906-6889</a>
-    </p>
+    <div class="content">
+        <h1>DJ Ikamon</h1>
+        <p>Ready to bring the best beats to your event!</p>
+        <p>For bookings and inquiries:</p>
+        <p>
+            📧 <a href="mailto:ikamondj@gmail.com">ikamondj@gmail.com</a><br>
+            📞 <a href="tel:+16789066889">678-906-6889</a>
+        </p>
+    </div>
+    <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/RxKB13TCCLM?si=UC1EJICBjsnwfn6_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
