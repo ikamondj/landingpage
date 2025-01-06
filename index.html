@@ -9,14 +9,12 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100%;
             margin: 0;
             color: white;
             text-align: center;
-            background: url('background.gif') center center / auto 110% fixed no-repeat;
-            background-size: cover;
+            background: url('background.gif') center center / auto 120% fixed no-repeat;
+            height: 200vh; /* increase height to see parallax effect */
         }
         h1, p, a, h2 {
             font-size: 1.5em;
@@ -40,30 +38,32 @@
             width: 100%;
             padding: 20px 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
         iframe {
             border: none;
             height: 315px;
             width: 100%;
+            margin-bottom: 10px; /* space between videos */
         }
-        .content {
-            padding-bottom: 50px; /* Space before the video */
-        }
-        .section {
-            margin: 50px 0; /* Spacing between sections */
+        .content, .section {
+            width: 33%; /* Limit width to 1/3 of the viewport */
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
     <div class="content">
         <h1>DJ Ikamon</h1>
-        <p>Ikamon takes a technologist's approach to performance: doing graphics engineering, rigging DMX lighting, and using unorthodox controllers and devices to bring you the coolest music experiences possible. They are primarily a House/Garage DJ but can perform open-genre sets as well. </p>
-        <p>Ikamon got their start during the 2020 pandemic bringing live music experiences to groups on VR platforms and has since become a virtual rave community leader, regularly hosting realtime VR events and experiences. 
+        <p>Ikamon takes a technologist’s approach to performance by doing graphics engineering, rigging DMX lighting, and using unorthodox controllers and devices to bring you the coolest music experiences possible. Primarily a House/Garage DJ, Ikamon can also perform open-genre sets.</p>
+        <p>Ikamon started during the 2020 pandemic, bringing live music experiences to groups on VR platforms and has since become a leader in the virtual rave community, regularly hosting real-time VR events and experiences.</p>
         <p>Services include:</p>
-        <p>-Live performances w/ or w/o visuals</p>
-        <p>-Remote consultation sessions to assist in creating visuals (for streamers & other DJs)</p>
-        <p>-Beginner DJ Lessons</p>
+        <ul>
+            <li>Live performances with or without visuals</li>
+            <li>Remote consultation sessions to assist in creating visuals (for streamers & other DJs)</li>
+            <li>Beginner DJ lessons</li>
+        </ul>
         <p>For bookings and inquiries:</p>
         <p>
             📧 <a href="mailto:ikamondj@gmail.com">ikamondj@gmail.com</a><br>
@@ -77,6 +77,9 @@
     <div class="video-wrapper">
         <iframe src="https://www.youtube.com/embed/RxKB13TCCLM?si=UC1EJICBjsnwfn6_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/LIzI6xTsYbU?si=0IBnGFH_pdnci_lB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    </div>
+    <div class="video-wrapper">
         <iframe src="https://www.youtube.com/embed/D1slQaTnLOs?si=2rnfpOR8OKYAGT1p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/4eeGeya6HE0?si=t6OyF_d_H_mnqBr1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
