@@ -11,15 +11,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 100%;
             margin: 0;
-            overflow: hidden;
             color: white;
             text-align: center;
             background: url('background.gif') center center / auto 110% fixed no-repeat;
             background-size: cover;
         }
-        h1, p, a {
+        h1, p, a, h2 {
             font-size: 1.5em;
             font-weight: bold;
             text-transform: uppercase;
@@ -39,31 +38,47 @@
         }
         .video-wrapper {
             width: 100%;
-            position: absolute;
-            bottom: 0;
+            padding: 20px 0;
             display: flex;
             justify-content: center;
-            padding: 20px 0;
         }
         iframe {
             border: none;
             height: 315px;
-            width: 560px;
+            width: 100%;
+        }
+        .content {
+            padding-bottom: 50px; /* Space before the video */
+        }
+        .section {
+            margin: 50px 0; /* Spacing between sections */
         }
     </style>
 </head>
 <body>
     <div class="content">
         <h1>DJ Ikamon</h1>
-        <p>Ready to bring the best beats to your event!</p>
+        <p>Ikamon takes a technologist's approach to performance: doing graphics engineering, rigging DMX lighting, and using unorthodox controllers and devices to bring you the coolest music experiences possible. They are primarily a House/Garage DJ but can perform open-genre sets as well. </p>
+        <p>Ikamon got their start during the 2020 pandemic bringing live music experiences to groups on VR platforms and has since become a virtual rave community leader, regularly hosting realtime VR events and experiences. 
+        <p>Services include:</p>
+        <p>-Live performances w/ or w/o visuals</p>
+        <p>-Remote consultation sessions to assist in creating visuals (for streamers & other DJs)</p>
+        <p>-Beginner DJ Lessons</p>
         <p>For bookings and inquiries:</p>
         <p>
             📧 <a href="mailto:ikamondj@gmail.com">ikamondj@gmail.com</a><br>
             📞 <a href="tel:+16789066889">678-906-6889</a>
         </p>
     </div>
+    <div class="section">
+        <h2>Example Sets</h2>
+        <p>Check out these sample mixes to hear DJ Ikamon in action!</p>
+    </div>
     <div class="video-wrapper">
         <iframe src="https://www.youtube.com/embed/RxKB13TCCLM?si=UC1EJICBjsnwfn6_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/LIzI6xTsYbU?si=0IBnGFH_pdnci_lB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/D1slQaTnLOs?si=2rnfpOR8OKYAGT1p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/4eeGeya6HE0?si=t6OyF_d_H_mnqBr1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 </body>
 </html>
