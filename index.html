@@ -3,83 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DJ Ikamon - Book Your Event</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            margin: 0;
-            color: white;
-            text-align: center;
-            background: url('background.gif') center center / auto 110% fixed no-repeat;
-            background-size: cover;
-        }
-        h1, p, a, h2 {
-            font-size: 1.5em;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: white;
-            text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        a {
-            color: #1db954;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #1ed760;
-        }
-        .video-wrapper {
-            width: 100%;
-            padding: 20px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        iframe {
-            border: none;
-            height: 315px;
-            width: 100%;
-            margin-bottom: 10px; /* space between videos */
-        }
-        .content, .section {
-            width: 33%; /* Limit width to 1/3 of the viewport */
-            margin: 20px 0;
-        }
-    </style>
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="DJ Ikamon — house, garage, and more. Available for EDM gigs, weddings, and events, plus visuals consultation and beginner DJ lessons.">
+    <title>DJ Ikamon — DJ sets, weddings & events</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="content">
-        <h1>DJ Ikamon</h1>
-        <u1>Ikamon takes a technologist’s approach to performance by doing graphics engineering, rigging DMX lighting, and using unorthodox controllers and devices to bring you the coolest music experiences possible. Primarily a House/Garage DJ, but can also perform multi-genre sets.</u1>
-        <u1>Ikamon started during the 2020 pandemic, bringing live music experiences to groups on VR platforms and has since become a leader and a staff member for a virtual rave community, regularly hosting real-time VR events and experiences.</u1>
-        <p>Services include:</p>
-        <ul>
-            <li>Live performances with or without visuals</li>
-            <li>Remote consultation sessions to assist in creating visuals (for streamers & other DJs)</li>
-            <li>Beginner DJ lessons</li>
-        </ul>
-        <p>For bookings and inquiries:</p>
-        <p>
-            📧 <a href="mailto:ikamondj@gmail.com">ikamondj@gmail.com</a><br>
-            🎮 Discord: ikamon#2151
-        </p>
-    </div>
-    <div class="section">
-        <p>Check out these sample mixes to hear DJ Ikamon in action!</p>
-    </div>
-    <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/RxKB13TCCLM?si=UC1EJICBjsnwfn6_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/LIzI6xTsYbU?si=0IBnGFH_pdnci_lB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/D1slQaTnLOs?si=2rnfpOR8OKYAGT1p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/4eeGeya6HE0?si=t6OyF_d_H_mnqBr1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="DJ Ikamon home">IKAMON<span aria-hidden="true">.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="#sets">Listen</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a class="nav-book" href="#booking">Contact <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-art" aria-hidden="true"></div>
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="container hero-content">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> EDM · Weddings · Events</p>
+                <h1 id="hero-title"><span class="dj-label">DJ</span> IKAMON<span class="green">.</span></h1>
+                <p class="hero-headline">House, garage,<br>and more.</p>
+                <p class="hero-description">I play EDM gigs, weddings, and events, with or without visuals. Most of my recorded sets are electronic, but I’m comfortable playing for a mixed crowd.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#booking">Book your event <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="#sets"><span class="play-small" aria-hidden="true">▶</span> Listen to a set</a>
+                </div>
+            </div>
+            <div class="container hero-bottom">
+                <p>Live sets & audiovisual work</p>
+                <a href="#sets">Recorded sets <span aria-hidden="true">↓</span></a>
+            </div>
+            <button class="motion-toggle" type="button" aria-pressed="false" hidden>Pause motion</button>
+        </section>
+
+        <section class="section container" id="sets" aria-labelledby="sets-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow section-number">01 / Listen</p>
+                    <h2 id="sets-title">Recorded sets<span class="green">.</span></h2>
+                </div>
+                <p>A selection of my EDM sets. <br>Listen below or watch on YouTube.</p>
+            </div>
+            <div class="sets-grid">
+                <article class="mix mix-featured">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube-nocookie.com/embed/_MB6ZRaAEDA" title="DJ Ikamon — 6th Annual Jackos Haunted Rave DJ Set" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="featured-copy">
+                        <p class="eyebrow">Featured set</p>
+                        <h3>6th Annual Jackos <br>Haunted Rave</h3>
+                        <p>This is the electronic side of what I play. For weddings and other events, I work with a broader selection of music. Requests are welcome.</p>
+                        <a class="text-link" href="https://www.youtube.com/watch?v=_MB6ZRaAEDA" target="_blank" rel="noopener noreferrer" aria-label="Watch 6th Annual Jackos Haunted Rave DJ Set on YouTube (opens in a new tab)">Watch on YouTube <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="mix">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube-nocookie.com/embed/2CTz5wuq7Hc" title="DJ Ikamon — Tech House Guru - LIVE TRIPPY TECH HOUSE MIX" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="mix-caption"><h3><span>02</span> Tech House Guru</h3><a href="https://www.youtube.com/watch?v=2CTz5wuq7Hc" target="_blank" rel="noopener noreferrer" aria-label="Watch Tech House Guru - LIVE TRIPPY TECH HOUSE MIX on YouTube (opens in a new tab)">YouTube <span aria-hidden="true">↗</span></a></div>
+                </article>
+                <article class="mix">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube-nocookie.com/embed/bGyUxzjZLoI" title="DJ Ikamon — Submediant Sector" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="mix-caption"><h3><span>03</span> Submediant Sector</h3><a href="https://www.youtube.com/watch?v=bGyUxzjZLoI" target="_blank" rel="noopener noreferrer" aria-label="Watch Submediant Sector on YouTube (opens in a new tab)">YouTube <span aria-hidden="true">↗</span></a></div>
+                </article>
+                <article class="mix">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube-nocookie.com/embed/H0ksrr1VevE" title="DJ Ikamon — Gen &amp; KG’s Birthday Bash" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="mix-caption"><h3><span>04</span> Gen &amp; KG’s Birthday Bash</h3><a href="https://www.youtube.com/watch?v=H0ksrr1VevE" target="_blank" rel="noopener noreferrer" aria-label="Watch Gen &amp; KG’s Birthday Bash on YouTube (opens in a new tab)">YouTube <span aria-hidden="true">↗</span></a></div>
+                </article>
+                <article class="mix">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube-nocookie.com/embed/jXPaUzdkoXA" title="DJ Ikamon — Ika’s After Hours Blacklight Jam" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="mix-caption"><h3><span>05</span> Ika’s After Hours Blacklight Jam</h3><a href="https://www.youtube.com/watch?v=jXPaUzdkoXA" target="_blank" rel="noopener noreferrer" aria-label="Watch Ika’s After Hours Blacklight Jam on YouTube (opens in a new tab)">YouTube <span aria-hidden="true">↗</span></a></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container about-section" id="about" aria-labelledby="about-title">
+            <div>
+                <p class="eyebrow section-number">02 / About</p>
+                <h2 id="about-title">Music, visuals, <br>and technology<span class="green">.</span></h2>
+            </div>
+            <div class="about-copy">
+                <p class="lead">I DJ, create visuals, and get into the technical side of live shows.</p>
+                <p>I started DJing in VR during the 2020 pandemic. I now help run a virtual rave community as a leader and staff member, and regularly host live events there.</p>
+                <p>Alongside mixing, I do graphics engineering, rig DMX lighting, and experiment with unconventional controllers. I like figuring out how to make the visuals and lighting work with the music.</p>
+                <p>I mainly play house and garage, but I’ve also spent a lot of time mixing music for general audiences. I’m available for EDM gigs, weddings, and other events, as well as VR performances.</p>
+                <div class="experience-note"><span class="green" aria-hidden="true">↗</span><p>Live event experience<br><strong>Performed with DJs at the Polls twice.</strong></p></div>
+            </div>
+        </section>
+
+        <section class="section container" id="services" aria-labelledby="services-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow section-number">03 / Services</p>
+                    <h2 id="services-title">What I offer<span class="green">.</span></h2>
+                </div>
+                <p>DJ bookings, help with visuals, <br>and lessons for new DJs.</p>
+            </div>
+            <div class="services-list">
+                <article class="service"><span class="service-index" aria-hidden="true">01</span><h3>EDM & live sets</h3><p>House, garage, and multi-genre DJ sets for gigs, raves, and VR events. Book a music-only set or a performance with visuals.</p></article>
+                <article class="service"><span class="service-index" aria-hidden="true">02</span><h3>Weddings & events</h3><p>DJ sets for weddings, parties, and other events. We’ll talk through your music preferences, the crowd, and any requests before the event.</p></article>
+                <article class="service"><span class="service-index" aria-hidden="true">03</span><h3>Visuals & consultation</h3><p>Remote sessions for DJs and streamers who want help creating visuals. Bring a project you’re working on or an idea you’d like to try.</p></article>
+                <article class="service"><span class="service-index" aria-hidden="true">04</span><h3>Beginner DJ lessons</h3><p>Learn the basics of DJing and mixing, with time to practice and ask questions. No previous experience needed.</p></article>
+            </div>
+            <p class="services-note">For other requests, <a class="text-link" href="#booking">send me a message. <span aria-hidden="true">↗</span></a></p>
+        </section>
+
+        <section class="section container booking-section" id="booking" aria-labelledby="booking-title">
+            <div>
+                <p class="eyebrow section-number">04 / Contact</p>
+                <h2 id="booking-title">Bookings <br><span class="green">& inquiries.</span></h2>
+            </div>
+            <div class="booking-copy">
+                <p>Email me with your event date, location or platform, and the music you’d like. For lessons or help with visuals, tell me what you want to work on.</p>
+                <a class="button button-primary" href="mailto:ikamondj@gmail.com?subject=DJ%20booking%20inquiry">Email me <span aria-hidden="true">↗</span></a>
+                <a class="email-link" href="mailto:ikamondj@gmail.com">ikamondj@gmail.com</a>
+                <p class="discord">Or find me on Discord <span>ikamon#2151</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container site-footer"><a class="wordmark" href="#home">IKAMON<span aria-hidden="true">.</span></a><p>DJ sets · Visuals · Lessons</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
